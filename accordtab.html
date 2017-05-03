@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Accordion & Tab</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+        <script type="text/javascript">
+             $(document).ready(function(){
+                $('#tabs').tabs();
+                $('#accordion').accordion({
+                    collapsible: true
+                });
+                var availableTags = [
+                    "Killer Whale",
+                    "Orca",
+                    "Seal",
+                    "Sea Lion",
+                    "Sperm Whale",
+                    "Type A",
+                    "Type B",
+                    "Type C",
+                    "Type D",
+                    "Norway",
+                    "Greenland",
+                    "Cephalopod",
+                    "Orcinus orca"
+                ];
+                $( "#tags" ).autocomplete({
+                    source: availableTags
+                });
+             });
+        </script>
+        <style type="text/css">
+            #wrapper{
+                background: lightblue;
+                width: 100%;
+                margin: 0px auto;
+            }
+            h1{
+                background: lightgrey;
+                margin: 0px;
+                padding: 10px;
+            }
+            img {
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <h1>About the Orca <img src="orca.png"></h1>
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Home</a></li>
+                    <li><a href="#tabs-2">Hunting</a></li>
+                    <li><a href="#tabs-3">Social Structure</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>
+                    The killer whale or orca (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and dolphins. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as there is no animal that preys on them. Killer whales are considered a cosmopolitan species, and can be found in each of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas.
+                    </p>
+                    <div class="ui-widget">
+                        <label for="tags">Related: </label>
+                        <input id="tags">
+                    </div>
+                    <div id="accordion">
+                        <h3>Fish</h3>
+                            <div>
+                                <p>
+                                Fish-eating killer whales prey on around 30 species of fish. Some populations in the Norwegian and Greenland sea specialize in herring and follow that fish's autumnal migration to the Norwegian coast. Salmon account for 96% of northeast Pacific residents' diet. About 65% of them are large, fatty Chinook. Chum salmon are also eaten, but smaller sockeye and pink salmon are not a significant food item. Depletion of specific prey species in an area is, therefore, cause for concern for local populations, despite the high diversity of prey. On average, a killer whale eats 227 kilograms (500 lb) each day. While salmon are usually hunted by an individual or a small group of individuals, herring are often caught using carousel feeding; the killer whales force the herring into a tight ball by releasing bursts of bubbles or flashing their white undersides. They then slap the ball with their tail flukes, either stunning or killing up to 15 fish at a time. The herring are then eaten one at a time. Carousel feeding has only been documented in the Norwegian killer whale population and with some oceanic dolphin species.
+                                </p>
+                            </div>
+                        <h3>Mammals</h3>
+                            <div>
+                                <p>
+                                Killer whales are very sophisticated and effective predators of marine mammals. Thirty-two cetacean species have been recorded as prey, from observing orcas' feeding activity, examining the stomach contents of dead orcas, and seeing scars on the bodies of surviving prey animals. Groups even attack larger cetaceans such as minke whales, gray whales, and rarely sperm whales or blue whales.
+                                </p>
+                                <p>
+                                Hunting large whales usually takes several hours. Killer whales generally choose to attack young or weak animals; however, a group of five or more may attack a healthy adult. When hunting a young whale, a group chases it and its mother until they wear out. Eventually, they separate the pair and surround the calf, preventing it from surfacing to breathe, drowning it. Pods of female sperm whales sometimes protect themselves by forming a protective circle around their calves with their flukes facing outwards, using them to repel the attackers. Rarely, large killer whale pods can overwhelm even adult female sperm whales. Adult bull sperm whales, which are large, powerful and aggressive when threatened, and fully grown adult blue whales, which are possibly too large to overwhelm, are not believed to be prey for killer whales.
+                                </p>
+                                <p>
+                                Killer whales have also been observed preying on terrestrial mammals, such as deer swimming between islands off the northwest coast of North America. Killer whale cannibalism has also been reported based on analysis of stomach contents, but this is likely to be the result of scavenging remains dumped by whalers. One killer whale was also attacked by its companions after being shot. Although resident killer whales have never been observed to eat other marine mammals, they occasionally harass and kill porpoises and seals for no apparent reason.
+                                </p>
+                            </div>
+                        <h3>Birds</h3>
+                            <div>
+                                <p>
+                                Killer whales in many areas may prey on cormorants and gulls. A captive killer whale at MarineLand discovered it could regurgitate fish onto the surface, attracting sea gulls, and then eat the birds. Four others then learned to copy the behaviour.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <p>Killer whales are apex predators, meaning that they themselves have no natural predators. They are sometimes called the wolves of the sea, because they hunt in groups like wolf packs. Killer whales hunt varied prey including fish, cephalopods, mammals, sea birds and sea turtles. However, different populations or species tend to specialize and some can have a dramatic impact on certain prey species. Those that feed on mammals may not even recognize fish as food. This specialization in diet and hunting is another reason to suggest that the orca is in fact several species.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Killer whales are notable for their complex societies. Only elephants and higher primates, such as humans, live in comparably complex social structures. Due to orcas' complex social bonds and society, many marine experts have concerns about how humane it is to keep these animals in captive situations.</p>
+                    <p>Resident killer whales in the eastern North Pacific have a particularly complex and stable social grouping system. Unlike any other mammal species whose social structure is known, residents live with their mothers for their entire lives. These family groups are based on matrilines consisting of the eldest female (matriarch) and her sons and daughters, and the descendants of her daughters, etc. The average size of a matriline is 5.5 animals. Because females can reach age 90, as many as four generations travel together. These matrilineal groups are highly stable. Individuals separate for only a few hours at a time, to mate or forage. With one exception, the killer whale named Luna, no permanent separation of an individual from a resident matriline has been recorded.</p>
+                </div>
+            </div>
+        </div> <!--end of wrapper-->
+    </body>
+</html>
